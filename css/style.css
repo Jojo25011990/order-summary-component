@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input,
+button,
+textarea {
+  background-color: #fff;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  position: relative;
+  background-color: #e0e8ff;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  padding-top: 7.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/pattern-background-desktop.svg") no-repeat center -0.8rem;
+  width: 100%;
+  height: 42.73rem;
+  z-index: 10;
+}
+@media (max-width: 375px) {
+  body::before {
+    background: url("../images/pattern-background-mobile.svg") no-repeat center;
+    width: 100%;
+    height: 20rem;
+    z-index: 10;
+  }
+}
+
+.card {
+  position: relative;
+  z-index: 11;
+  width: 45rem;
+  height: 69.7rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.card__imgbox {
+  width: 100%;
+  height: 22rem;
+  margin-bottom: 4.5rem;
+}
+.card__imgbox-img {
+  width: 100%;
+  object-fit: cover;
+}
+.card__content {
+  padding: 0 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__heading {
+  color: #1f2e55;
+  margin-bottom: 1.7rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.card__description {
+  color: #717fa6;
+  margin-bottom: 2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.card__price {
+  width: 35.4rem;
+  height: 9.8rem;
+  margin-bottom: 3.2rem;
+  background-color: #f7f9ff;
+  border-radius: 1.1rem;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card__price-plan {
+  color: #717fa6;
+  margin-left: 2rem;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+.card__price-name {
+  color: #1f2e55;
+  font-weight: 900;
+}
+.card__price-change:link, .card__price-change:visited {
+  color: #382ae1;
+  text-decoration: underline;
+  margin-left: 9rem;
+  cursor: pointer;
+  transition: color 0.25s, text-decoration 0.25s;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.card__price-change:hover, .card__price-change:active {
+  color: #766cf1;
+  text-decoration: none;
+}
+.card__btn-payment {
+  width: 35.4rem;
+  height: 5rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 2rem 2rem rgba(56, 42, 225, 0.193);
+  margin-bottom: 3.2rem;
+  background-color: #382ae1;
+  color: #fff;
+  transition: background-color 0.25s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.card__btn-payment:hover {
+  background-color: #766cf1;
+}
+.card__btn-cancel {
+  margin-bottom: 4.5rem;
+  color: #717fa6;
+  cursor: pointer;
+  transition: color 0.25s;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.card__btn-cancel:hover {
+  color: #1f2e55;
+}
