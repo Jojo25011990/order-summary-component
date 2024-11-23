@@ -44,7 +44,8 @@ body {
 	background-color: $bg-body;
 	min-height: 100vh;
 	font-family: "Red Hat Display", sans-serif;
-	padding-top: 7.5rem;
+	// padding-top: 7.5rem;
+	padding-top: 9.5rem;
 
 	@include flex-settings($align: none);
 
