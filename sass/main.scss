@@ -8,6 +8,7 @@ $color-heading: #1f2e55;
 $color-description: #717fa6;
 $color-accent: #382ae1;
 $color-hover-state: #766cf1;
+$color-box-shadow-card: #0d30bd;
 
 // *** Mixins ***
 @mixin flex-settings($direction: row, $justify: center, $align: center) {
@@ -79,6 +80,8 @@ body {
 	background-color: $color-primary;
 
 	border-radius: 2rem;
+	box-shadow: 0 4rem 4rem -2rem rgba($color: $color-box-shadow-card, $alpha:
+				0.15);
 
 	overflow: hidden;
 

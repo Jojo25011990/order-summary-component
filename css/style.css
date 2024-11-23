@@ -123,6 +123,7 @@ body::before {
   height: 69.7rem;
   background-color: #fff;
   border-radius: 2rem;
+  box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.15);
   overflow: hidden;
 }
 .card__imgbox {
