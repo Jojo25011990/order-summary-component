@@ -129,6 +129,10 @@ body {
 
 		@include flex-settings($justify: null);
 
+		@media (max-width: 380px) {
+			padding: 0 1.4rem;
+		}
+
 		&-plan {
 			color: $color-description;
 			margin-left: 2rem;

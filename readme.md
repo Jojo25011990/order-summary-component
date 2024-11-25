@@ -22,7 +22,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./order-summary-component.png)
+-   width: 1920px (large desktop screen)
+
+    ![](./screenshot-summary-card.png)
 
 ### Links
 
